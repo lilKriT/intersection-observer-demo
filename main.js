@@ -1,3 +1,5 @@
+import "/style.css";
+
 const sectionOne = document.querySelector(".one");
 const sections = document.querySelectorAll("section");
 
