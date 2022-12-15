@@ -53,5 +53,10 @@ headerObserver.observe(sectionOne);
 // Scrolling
 document.addEventListener("scroll", (e) => {
   let pixelsFromTop = Math.round(window.scrollY);
-  console.log(pixelsFromTop);
+  //   console.log(pixelsFromTop);
+  if (pixelsFromTop > 50) {
+    header.classList.add("shrunk");
+  } else {
+    header.classList.remove("shrunk");
+  }
 });
