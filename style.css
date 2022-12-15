@@ -43,3 +43,7 @@ header {
 .accent {
   background-color: red;
 }
+
+.shrunk {
+  height: 40px;
+}

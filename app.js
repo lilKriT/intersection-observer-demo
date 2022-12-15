@@ -49,3 +49,9 @@ const headerObserver = new IntersectionObserver(function (
 headerOptions);
 
 headerObserver.observe(sectionOne);
+
+// Scrolling
+document.addEventListener("scroll", (e) => {
+  let pixelsFromTop = Math.round(window.scrollY);
+  console.log(pixelsFromTop);
+});
