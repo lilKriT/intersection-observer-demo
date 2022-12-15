@@ -1,4 +1,5 @@
 import "/style.css";
+import _ from "lodash";
 
 const sectionOne = document.querySelector(".one");
 const sections = document.querySelectorAll("section");
@@ -53,12 +54,16 @@ headerOptions);
 headerObserver.observe(sectionOne);
 
 // Scrolling
-document.addEventListener("scroll", (e) => {
-  let pixelsFromTop = Math.round(window.scrollY);
-  //   console.log(pixelsFromTop);
-  if (pixelsFromTop > 50) {
-    header.classList.add("shrunk");
-  } else {
-    header.classList.remove("shrunk");
-  }
-});
+document.addEventListener(
+  "scroll",
+  _.throttle((e) => {
+    let pixelsFromTop = Math.round(window.scrollY);
+    console.count("Scroll");
+    // console.log("!");
+    if (pixelsFromTop > 50) {
+      header.classList.add("shrunk");
+    } else {
+      header.classList.remove("shrunk");
+    }
+  }, 150)
+);

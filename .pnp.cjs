@@ -28,6 +28,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         [null, {\
           "packageLocation": "./",\
           "packageDependencies": [\
+            ["lodash", "npm:4.17.21"],\
             ["vite", "virtual:fb5252b0f7c41ffbf6e6d7623ed44deb17375468ec1223b2fa93418d80012f812b80cb5adc523c741b1c0d3e763c34f12fbca2d2a4b826a0ebdf59e32eeae7f4#npm:4.0.1"]\
           ],\
           "linkType": "SOFT"\
@@ -765,6 +766,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./",\
           "packageDependencies": [\
             ["intersection-observer-demo", "workspace:."],\
+            ["lodash", "npm:4.17.21"],\
             ["vite", "virtual:fb5252b0f7c41ffbf6e6d7623ed44deb17375468ec1223b2fa93418d80012f812b80cb5adc523c741b1c0d3e763c34f12fbca2d2a4b826a0ebdf59e32eeae7f4#npm:4.0.1"]\
           ],\
           "linkType": "SOFT"\
@@ -812,6 +814,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/isexe-npm-2.0.0-b58870bd2e-26bf6c5480.zip/node_modules/isexe/",\
           "packageDependencies": [\
             ["isexe", "npm:2.0.0"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["lodash", [\
+        ["npm:4.17.21", {\
+          "packageLocation": "./.yarn/cache/lodash-npm-4.17.21-6382451519-eb835a2e51.zip/node_modules/lodash/",\
+          "packageDependencies": [\
+            ["lodash", "npm:4.17.21"]\
           ],\
           "linkType": "HARD"\
         }]\
