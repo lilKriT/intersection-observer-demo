@@ -16,3 +16,15 @@ p {
   width: 70%;
   max-width: 800px;
 }
+
+#one {
+  background-color: darkturquoise;
+}
+
+#two {
+  background-color: lightskyblue;
+}
+
+#three {
+  background-color: rebeccapurple;
+}
