@@ -17,14 +17,18 @@ p {
   max-width: 800px;
 }
 
-#one {
+.one {
   background-color: darkturquoise;
 }
 
-#two {
+.two {
   background-color: lightskyblue;
 }
 
-#three {
+.three {
   background-color: rebeccapurple;
+}
+
+.inverse {
+  background-color: #777;
 }
