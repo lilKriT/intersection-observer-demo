@@ -26,3 +26,26 @@ const observer = new IntersectionObserver(function (entries, observer) {
 sections.forEach((section) => {
   observer.observe(section);
 });
+
+// Header part here
+const header = document.querySelector("header");
+
+const headerOptions = {
+  rootMargin: "-200px 0px 0px 0px",
+};
+const headerObserver = new IntersectionObserver(function (
+  entries,
+  headerObserver
+) {
+  entries.forEach((entry) => {
+    console.log(entry.target);
+    if (!entry.isIntersecting) {
+      header.classList.add("accent");
+    } else {
+      header.classList.remove("accent");
+    }
+  });
+},
+headerOptions);
+
+headerObserver.observe(sectionOne);

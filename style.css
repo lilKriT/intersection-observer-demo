@@ -32,3 +32,14 @@ p {
 .inverse {
   background-color: #777;
 }
+
+header {
+  height: 80px;
+  background-color: aqua;
+  width: 100%;
+  position: fixed;
+}
+
+.accent {
+  background-color: red;
+}
